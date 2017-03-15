@@ -12,7 +12,7 @@ The project cruftcam-block-builder was created and is maintained by Stefan Reima
 A tutorial is under development at the moment and will be published as a free learning ressource during April 2017.
 
 # Bugs & Issues
-I'm shore there will some comming up soon ;-)
+We'll see what happens during development.
 
 # Copyright & License
 Copyright 2016-2017 Stefan Reimann. Code released under the MIT license.
