@@ -3,7 +3,9 @@ Welcome to this tutorial.
 Here you can find the starting files for the cruftcam-block-builder tutorial.
 
 index.html
+
 content.css
+
 content.js
 
 These files are the starting point for the video tutorial that can be found on YouTube.
