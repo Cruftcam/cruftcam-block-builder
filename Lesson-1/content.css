@@ -1,0 +1,44 @@
+
+body {    
+    background-color: rgba(155, 155, 155, 1.00);
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: white;
+    margin: 0px;
+    padding-top: 16px;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-bottom: 16px;
+    width: 100%;       
+}
+
+.ccam-container {
+    margin: 0px;
+    padding: 24px;
+}
+
+.ccam-toolbox {
+    background-color: white;
+    margin: 0px;
+    padding-top: 16px;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-bottom: 16px;
+    width: 100%;
+    height: 180px;
+    position: fixed;
+    bottom: 0px;    
+}
+
+/* Fonts */
+.ccam-Font2 {
+    font-family: 'Lato', Sans-Serif;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0px;
+    color: #000;
+}
+
