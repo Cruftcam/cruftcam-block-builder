@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+
+        <!-- Google Fonts -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic&amp;subset=latin">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:200,300,400,700,400italic,700italic&amp;subset=latin">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900">        
+        <!-- Bootstrap and jQuery -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+        <!-- Cruftcam Tutorial  -->
+        <link rel="stylesheet" href="content.css">
+        <script src="content.js"></script> 
+
+        <title>Cruftcam Tutorials - Lesson 2</title>
+    </head>
+    <body>
+
+        <section class="header">            
+            <label class="ccam-Font2">CRUFTCAM TUTORIALS: cruftcam-block-builder / Tutorial 1 / Lesson 2</label>
+        </section>
+
+        <!-- Content we partially want to manipulate in realtime with Javascript -->
+        <section id="block-header" class="block-header">
+
+            <div id="back-h" class="ccam-container" onload="addEventListener(click, setActive1(), true)" onclick="setActive1()">
+                <h1 id="flexFont" class="ccam-h1-flexible">Lorem ipsum dolor sit amet consetetur</h1>
+            </div>
+
+            <div id="back-p" class="ccam-container-p" onclick="setActive2()">
+                <p id="flexFont2" class="ccam-h2-flexible">
+                    At vero eos et accusam et justo duo dolores<br>
+                    et ea rebum stet clita kasd gubergren<br>
+                    vero eos et accusam et justo duo dolore<br>
+                </p>
+            </div>
+            
+        </section>
+        <!-- End: Content  -->
+
+        <!-- Sticky footer for our controls. -->
+        <section>
+            
+            <div class="ccam-toolbox">
+                <div class="col-sm-4" style="background-color:rgba(255, 255, 255, 0.00);"><!-- The style here was just set to control the layout and could be removed -->              
+                    <div class="btn-group">                        
+                        <button type="button" class="btn btn-primary" onclick="Left()">Left</button>
+                        <button type="button" class="btn btn-primary" onclick="Center()">Center</button>
+                        <button type="button" class="btn btn-primary" onclick="Right()">Right</button>                        
+                        <div class="btn-group dropup">
+                            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                            Google Fonts <span class="caret"></span></button>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#" onclick="setFontLato()">Lato</a></li>
+                                <li><a href="#" onclick="setFontLora()">Lora</a></li>
+                                <li><a href="#" onclick="setFontMontserrat()">Montserrat</a></li>
+                            </ul>
+                        </div>                                            
+                        <button type="button" class="btn btn-primary" onclick="Background()">Background</button>
+                    </div>
+                </div>                
+                
+                <!-- Another Cruftcam tutorial will show how to create simple custom controls like the following. For simplicity I put the styles right here.  -->                  
+                <div class="col-sm-4 row" style="display: -webkit-flex; -webkit-align-items: center; -webkit-align-items: center; background-color:silver; border-radius: 5px; height: 34px;"> 
+                    <div><label for="size">Font Size</label></div>
+                    <div style="margin-left: 12px; width: 200px;"><input type="range" id="size" max="10" value="3.6" step="0.1" oninput="outputUpdate(value)"></div>
+                    <div style="margin-bottom: 10px; margin-left: 12px;"><output for="size" id="volume">3.6</output></div>
+                </div> 
+                             
+            </div>            
+        </section>
+        <!-- End: Sticky footer  -->
+        
+    </body>
+</html>
